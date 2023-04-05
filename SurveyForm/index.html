@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <title>survey-form.freecodecamp.rocks/</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="header">
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+  </div>
+  <form id="survey-form" method="post" action="https://survey-form.freecodecamp.rocks">
+    <fieldset>
+      <label  id="name-label" for="name">Name<input class="block wide" id="name" type="text" name="name" placeholder=" Enter your name" required /></label>
+      <label id="email-label" for="email">Email<input class="block wide" id="email" name="email" type="email" placeholder=" Enter your Email" required /></label>
+      <label id="number-label" for="number">Age (optional)<input class="block wide" type="number" name="age" id="number" min="10" max="99" placeholder=" Age" /></label>
+    </fieldset>
+    <fieldset>
+      <label for="dropdown">Which option best describes your current role?
+    <select class="block" id="dropdown" name="role">
+      <option value="" disabled selected hidden>Select current role</option>
+      <option value="0">Student</option>
+      <option value="1">Full Time Job</option>
+      <option value="2">Full Time Learner</option>
+      <option value="3">Prefer not to say</option>
+      <option value="4">Other</option>
+    </select>
+    </label>
+    </fieldset>
+    <fieldset>
+      <p>Would you recommend freeCodecamp to a friend?</p>
+      <label class="block" for="recommend"><input type="radio" id="recommend" value="0" name="recommend" checked /> Definitely</label>
+      <label class="block" for="recommend"><input type="radio" id="recommend" value="1" name="recommend" /> Maybe</label>
+      <label class="block" for="recommend"><input type="radio" id="recommend" value="2" name="recommend" /> Not sure</label>
+    </fieldset>
+    <fieldset>
+      <label for="feature">What is your favorite feature of freeCodeCamp?
+        <select class="block" id="feature" name="feature">
+          <option value="" disabled selected hidden>Select an option</option>
+          <option value="0">Challenges</option>
+          <option value="1">Projects</option>
+          <option value="2">Community</option>
+          <option value="3">Open Source</option>
+          </select>
+          </label>
+    </fieldset>
+    <fieldset>
+      <p>What would you like to see improved? (Check all that apply)</p>
+      <label class="block"><input type="checkbox" value="0" /> Front-end Projects</label>
+      <label class="block"><input type="checkbox" value="1" /> Back-end Projects</label>
+      <label class="block"><input type="checkbox" value="2" /> Data Visualization</label>
+      <label class="block"><input type="checkbox" value="3" /> Challenges</label>
+      <label class="block"><input type="checkbox" value="4" /> Open Source Community</label>
+      <label class="block"><input type="checkbox" value="5" /> Gitter help rooms</label>
+      <label class="block"><input type="checkbox" value="6" /> Videos</label>
+      <label class="block"><input type="checkbox" value="7" /> City Meetups</label>
+      <label class="block"><input type="checkbox" value="8" /> Wiki</label>
+      <label class="block"><input type="checkbox" value="9" /> Forums</label>
+      <label class="block"><input type="checkbox" value="10" /> Aditional Courses</label>
+    </fieldset>
+    <fieldset>
+      <label>Any comments or suggestions?<textarea class="block" id="comments" name="comments" placeholder=" Enter your comment here..." rows="3" cols="30"></textarea></label>
+    </fieldset>
+    <fieldset>
+      <input class="submit" type="submit" id="submit" value="Submit"/>
+    </fieldset>
+  </form>
+</body>
+
+</html>
